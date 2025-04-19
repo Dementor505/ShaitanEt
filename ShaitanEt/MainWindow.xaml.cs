@@ -28,7 +28,7 @@ namespace ShaitanEt
             App.MainFrame = MainFrame;
             MainFrame.Navigate(new StartPage());
         }
-
+        
         private void CloseApp_Click(object sender, RoutedEventArgs e)
         {
             SureCloseWindow sureCloseWindow = new SureCloseWindow();
