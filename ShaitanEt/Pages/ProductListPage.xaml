@@ -1,0 +1,40 @@
+﻿<Page x:Class="ShaitanEt.Pages.ProductListPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:ShaitanEt.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="900" d:DesignWidth="1000"
+      Title="ProductListPage">
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="200"></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <StackPanel Grid.Column="0" VerticalAlignment="Center">
+            <Button Width="100" Height="50" Content="ВЫЙТИ" x:Name="LogOut" Click="LogOut_Click"></Button>
+        </StackPanel>
+        <StackPanel Grid.Column="1" Orientation="Horizontal">
+            <StackPanel Orientation="Horizontal">
+                <StackPanel Orientation="Vertical">
+                    <WrapPanel x:Name="ProductPanel" Width="600" HorizontalAlignment="Left" Height="750">
+
+                    </WrapPanel>
+                    <TextBlock x:Name="CountPageTb" Text="0-0 из 00" HorizontalAlignment="Right" FontSize="30" Margin="30"></TextBlock>
+                </StackPanel>
+                <StackPanel Orientation="Vertical" Margin="0,50,0,0">
+                    <TextBlock Width="180" Text="ПОИСК" FontSize="30"></TextBlock>
+                    <TextBox Width="180" FontSize="30" BorderThickness="1" BorderBrush="Black"></TextBox>
+                    <TextBlock Width="180" Text="Коллекция" FontSize="30"></TextBlock>
+                    <TextBox Width="180" FontSize="30" BorderThickness="1" BorderBrush="Black"></TextBox>
+                    <StackPanel Orientation="Horizontal" Margin="0,10,0,0">
+                        <Button x:Name="BackPageBtn" Width="80" Height="50" Content="(--" FontSize="30" Click="BackPageBtn_Click"></Button>
+                        <Button x:Name="NextPAgeBtn" Width="80" Height="50" Content="--)" Margin="20,0,0,0" FontSize="30" Click="NextPAgeBtn_Click"></Button>
+                    </StackPanel>
+                </StackPanel>
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+</Page>

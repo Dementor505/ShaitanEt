@@ -1,0 +1,18 @@
+﻿<Window x:Class="ShaitanEt.Windows.SureCloseWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ShaitanEt.Windows"
+        mc:Ignorable="d"
+       Title="SureCloseWindow" Height="300" Width="500" WindowStartupLocation="CenterScreen" WindowStyle="None" MinHeight="300" MaxHeight="300" MinWidth="500" MaxWidth="500">
+    <Grid>
+        <StackPanel Orientation="Vertical">
+            <TextBlock FontSize="50" Text="ТОЧНО ВЫЙТИ?" TextAlignment="Center"></TextBlock>
+            <StackPanel Orientation="Horizontal" VerticalAlignment="Center" Margin="0,70,0,0" HorizontalAlignment="Center">
+                <Button Width="200" x:Name="YesBtn" Height="50" Content="ДА" Margin="0,0,30,0" FontSize="30" Click="YesBtn_Click"></Button>
+                <Button Width="200" x:Name="NoBtn" Height="50" Content="НЕТ" FontSize="30" Click="NoBtn_Click"></Button>
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+</Window>
