@@ -35,7 +35,7 @@ namespace ShaitanEt
             sureCloseWindow.ShowDialog();
         }
 
-        private void ShowDown_Click(object sender, RoutedEventArgs e)
+        private void ShowDown_Click(object sender, RoutedEventArgs e) 
         {
             this.WindowState = WindowState.Minimized;
         }
